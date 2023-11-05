@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021 The cherishOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_d2x.mk
+    $(LOCAL_DIR)/cherish_d2x.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_d2x-eng \
-    lineage_d2x-user \
-    lineage_d2x-userdebug
+    cherish_d2x-eng \
+    cherish_d2x-user \
+    cherish_d2x-userdebug
