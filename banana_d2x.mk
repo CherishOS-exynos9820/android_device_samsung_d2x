@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The cherishOS Project
+# Copyright (C) 2021 The bananaOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -36,20 +36,16 @@ TARGET_BOOTANIMATION_HALF_RES := true
 TARGET_SCREEN_HEIGHT := 3040
 TARGET_SCREEN_WIDTH := 1440
 
-# Cherish
-CHERISH_MAINTAINER := FrEeRuNnEr4EvEr
-CHERISH_CHIPSET := exynos9825
-CHERISH_BATTERY := 4300mAh
-CHERISH_DISPLAY := 1440x3040
-
-## Inherit some common cherish stuff
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+## Inherit some common banana stuff
+$(call inherit-product, vendor/banana/config/common.mk)
+BANANA_MAINTAINER := FrEeRuNnEr4EvEr
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 ## Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 ## Device identifier, this must come after all inclusions
-PRODUCT_NAME := cherish_d2x
+PRODUCT_NAME := banana_d2x
 PRODUCT_DEVICE := d2x
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-N976B
